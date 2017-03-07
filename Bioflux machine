@@ -1,0 +1,86 @@
+Bio Flux machine
+
+Starting up
+
+1)	Turn on hardware first
+•	Bioflux box
+•	MCU 2008
+•	Powersupply
+•	Microscope (button on back left of scope)
+
+2)	Then turn on computer
+Bioflux has two programs:
+1)	Bioflux: controls pumps 
+2)	Bioflux montage: microscope, analysis and imagery
+Bioflux
+a)	Enter plate serial number (last four digits)
+b)	Select Manual and enter dines required for each
+•	Columns 1 -4 operated by one pump and 5 – 8 by another so check each. 
+
+Priming the plate 
+i.e. wetting the pipes etc so they work properly. 
+If you want to coat wells, then do so at this step.
+•	Put media in the outlet wells -> going to be pumped into left well (see section below for how to put plate in bioflux)
+•	Media will run from light green to dark green so click on ‘outlet’ to choose these as light green
+•	Run at 1 dine for a couple of minutes. 
+
+Putting plate into holder
+
+•	Move little grey clip on right back of holder and put plate in
+•	Put lid on with silver things on left of groove -> slide to right and then tighten the red clips. 
+•	If red clips are tight enough then the pressure won’t be right and liquid won’t run properly.
+
+Temperature
+Turn on heating unit and control using little display box under computer screen
+If using 37°C then heat media to 37 BEFORE placing in wells (or will make bubbles as it heats = problems with microfluidics) 
+
+Seeding the plate
+
+Inlet: Media
+Outlet: Cells to seed
+•	Place roughly same volume in inlet and outlet (or vol difference will result in irregular flow)
+•	Choose 2 dines for 5 secs
+•	Click lanes you want to run and then run
+Check with m/scope that cells are in channel (but not past channel as you don’t want them going into your inlet and therefore contaminating media)
+
+Microscope
+
+Has bright field at top and fluorescent at the bottom
+Bright field is sufficient for viewing development of biofilm -> fluorescent scope used if have dyes eg gfp (doesn’t pick up bioluminescence) but can be used for live/dead stain
+Use Joystick to move light source to channel of interest
+On little display use eye/camera icon to switch between eyepiece view and computer screen view. 
+Use 10x to view biofilm – more zoomed in wont capture what’s happening enough 
+
+Settings
+
+Main – check first 3 boxes
+Saving – choose folder for data to be put in -> put in your own directory 
+Timing – Eg every 20 mins for 18 hours
+Stage – here you give coordinates of each channel to the microscope so it can find them and take a picture at the relevant time. Each coordinate will be x, y and z with z being focus so you can change the focus between channels if necessary.
+Once here, use joystick (or mouse?) to scroll til you find channel 1 (there will be a no 1 above it so you know). When you are focused and in correct position, click in ‘Enter Position’ tab and write 1. Then scroll to find channel 2 and continue. 
+Wavelength – try 4 to start. 
+Brightfield – 10millisec
+FITC/Red etc 500 millisec
+All closed -> on this tab choose ‘all closed’
+Click ‘Aquire’ and wait -> don’t use computer during this time as could crash. 
+
+Analysis of Data
+
+NM Standards -> Apps -> Multidimensional data
+
+Click little box on left of name of your data and will show all your frames
+Either check the ones you want or to check them all right click over them so select all
+Click load images = create a video
+
+Getting data on biofilm size (for graphs etc)
+
+1)	Telling computer what is background noise and what is not
+While video is on screen, click on second from bottom icon (a little graph image) and click auto threshold for dark objects ¬-> hopefully this will be good but if not then manually change. 
+
+2)	Getting actual data:
+Click on NM Standards -> measure -> region measurements
+Should bring up a graph that is equivalent to a growth curve with time on x axis and threshold on y
+Can use this graph directly or export data to excel.
+
+Done!
+
